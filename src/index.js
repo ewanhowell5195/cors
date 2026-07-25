@@ -144,9 +144,19 @@ async function proxyDynamic(request, target) {
   }
 
   const forwarded = new Headers()
-  const dropHeaders = ["content-length", "content-type", "host", "accept-encoding"]
+  const dropHeaders = [
+    "content-length",
+    "content-type",
+    "host",
+    "accept-encoding",
+    "cookie",
+    "authorization",
+    "origin",
+    "referer",
+    "cdn-loop"
+  ]
   for (const [key, value] of reqHeaders.entries()) {
-    if (!dropHeaders.includes(key)) forwarded.set(key, value)
+    if (!dropHeaders.includes(key) && !key.startsWith("cf-")) forwarded.set(key, value)
   }
 
   let upstream
