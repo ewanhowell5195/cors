@@ -1,5 +1,5 @@
 const ALLOWED_ORIGIN =
-  /^(https:\/\/([\w-]+\.)*(ewanhowell\.com|minecraft-structure-viewer\.pages\.dev)|https?:\/\/(localhost|127\.0\.0\.1|\[::1\]|10\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|172\.(1[6-9]|2\d|3[01])\.\d{1,3}\.\d{1,3})(:\d+)?)$/
+  /^(https:\/\/([\w-]+\.)*(ewanhowell\.com|ewanhowell\.pages\.dev|asset-browser\.pages\.dev|minecraft-structure-viewer\.pages\.dev|web\.blockbench\.net)|https?:\/\/(localhost|127\.0\.0\.1|\[::1\]|10\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|172\.(1[6-9]|2\d|3[01])\.\d{1,3}\.\d{1,3})(:\d+)?)$/
 
 const IMMUTABLE_CACHE = "public, max-age=31536000, immutable"
 const PROXY_UA = "Mozilla/5.0 (compatible; cors.ewanhowell.com)"
