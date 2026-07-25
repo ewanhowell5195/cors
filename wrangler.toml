@@ -1,0 +1,15 @@
+name = "cors"
+main = "src/index.js"
+compatibility_date = "2026-07-24"
+
+routes = [
+    { pattern = "cors.ewanhowell.com", custom_domain = true },
+]
+
+# only the immutable minecraft urls come back with a cacheable Cache-Control,
+# so nothing else is ever stored
+[cache]
+enabled = true
+# the stored bytes are upstream files rather than worker output, so a deploy
+# shouldn't throw the whole cache away
+cross_version_cache = true

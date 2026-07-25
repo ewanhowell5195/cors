@@ -1,0 +1,12 @@
+{
+  "name": "cors",
+  "private": true,
+  "description": "A Cloudflare Worker that proxies requests to servers with no CORS headers, caching immutable Minecraft files at the edge.",
+  "scripts": {
+    "dev": "wrangler dev"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.114.0"
+  }
+}
